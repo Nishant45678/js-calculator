@@ -1,0 +1,22 @@
+.keypads{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+button{
+  all: unset;
+  background-color: hsl(from var(--base-color) h s calc( l + 15 ));
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.137);
+  padding: 3px;
+}
+
+.col-span-2{
+  grid-column: span 2;
+}
+
+.row-span-2{
+  grid-row: span 2;
+}

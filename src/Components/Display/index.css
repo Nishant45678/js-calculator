@@ -1,0 +1,14 @@
+.display-wrapper {
+  background-color: hsl(from var(--base-color) h s calc(l + 20));
+  border-radius: 8px;
+  padding: 5px 10px 2px 10px;
+  text-align: right;
+}
+
+.evaluation {
+  font-size: 10px;
+}
+
+.display {
+  font-size: 1rem;
+}
