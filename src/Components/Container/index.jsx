@@ -92,7 +92,7 @@ export default class Container extends Component {
           if (!expression || /[+\-*/]$/.test(expression)) return;
           else if (!isEvaluated) {
             const sanitized = expression.replace(/[^+\-*./\d]/g, "");
-            const result = eval(sanitized);
+            const result = Function(`return ${sanitized}`)();
             this.setState({
               display: result,
               expression: expression + "=" + result,
